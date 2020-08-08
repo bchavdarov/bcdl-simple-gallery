@@ -1,0 +1,14 @@
+{
+	"name": "bcdl-sg/bcdl-simple-gallery",
+	"title": "BCDLab Simple Gallery plugin",
+	"category": "common",
+	"icon": "smiley",
+	"description": "BCDL gallery plugin written with ESNext standard and JSX support – build step required.",
+	"textdomain": "bcdl-sg",
+	"supports": {
+		"html": false
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
