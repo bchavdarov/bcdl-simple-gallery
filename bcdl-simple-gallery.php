@@ -255,14 +255,14 @@ function bcdl_simple_gallery( $attr ) {
 			$output .= "
 				<{$captiontag} class='wp-caption-text gallery-caption' id='$selector-$id'>
 				<a class='stretched-link clearlink' href='#' data-toggle='modal' data-target='#bcdlimg{$id}'>
-					<h2 class='card-title h3 text-center bcdl-rounded font-weight-bold'>
+					<h2 class='card-title h4 text-center bcdl-rounded font-weight-bold'>
 					" . get_post_meta( $attachment->ID, '_wp_attachment_image_alt', true ) . "
 					</h2>
 				</a>
 				<p class='text-center'>$attachment->post_content</p>
 				</{$captiontag}>
 				<div class='modal fade' id='bcdlimg{$id}' tabindex='-1' role='dialog' aria-labelledby='BCDOL Modal Label' aria-hidden='true'>
-					<div class='modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl h-100'>
+					<div class='modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg h-100'>
 						<div class='modal-content bg-dark'>
 							<div class='modal-body'>
 								<img class='img-fluid' src='".wp_get_attachment_url( $attachment->ID )."' alt='". get_post_meta( $attachment->ID, '_wp_attachment_image_alt', true ) ."'/>
