@@ -107,7 +107,8 @@ function bcdl_simple_gallery( $attr ) {
 	$atts  = shortcode_atts(
 		array(
 			'order'      => 'ASC',
-			'orderby'    => 'menu_order ID',
+			//'orderby'    => 'menu_order ID',
+			'orderby'    => 'post_date',
 			'id'         => $post ? $post->ID : 0,
 			'itemtag'    => $html5 ? 'div' : 'dl',
 			'icontag'    => $html5 ? 'div' : 'dt',
@@ -244,7 +245,7 @@ function bcdl_simple_gallery( $attr ) {
 			$orientation = ( $image_meta['height'] > $image_meta['width'] ) ? 'portrait' : 'landscape';
 		}
 
-		$output .= "<{$itemtag} class='card bcdl-mask-contain shadow gallery-item'>";
+		$output .= "<{$itemtag} class='card bcdl-mask-contain shadow gallery-item mb-4'>";
 		$output .= "
 			<{$icontag} class='img-contain gallery-icon {$orientation}'>
 				$image_output
@@ -261,7 +262,7 @@ function bcdl_simple_gallery( $attr ) {
 				</a>
 				<p class='text-center'>$attachment->post_content</p>
 				</{$captiontag}>
-				<div class='modal fade' id='bcdlimg{$id}' tabindex='-1' role='dialog' aria-labelledby='BCDOL Modal Label' aria-hidden='true'>
+				<div class='modal fade' id='bcdlimg{$id}' tabindex='-1' role='dialog' aria-labelledby='BCDOL Modal Label' aria-hidden='true' style='max-width: fit-content !important; min-width: auto !important;'>
 					<div class='modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl h-100'>
 						<div class='modal-content bg-dark'>
 							<div class='modal-body'>
