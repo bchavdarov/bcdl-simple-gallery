@@ -215,7 +215,7 @@ function bcdl_simple_gallery( $attr ) {
 	}
 
 	$size_class  = sanitize_html_class( $atts['size'] );
-	$gallery_div = "<div id='$selector' class='card-columns gallery galleryid-{$id} gallery-columns-{$columns} gallery-size-{$size_class}'>";
+	$gallery_div = "<div id='$selector' class='card-columns3 gallery galleryid-{$id} gallery-columns-{$columns} gallery-size-{$size_class}'>";
 
 	/**
 	 * Filters the default gallery shortcode CSS styles.
