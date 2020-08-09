@@ -5,7 +5,7 @@
  * Description:       BCDL gallery plugin written with ESNext standard and JSX support – build step required.
  * Version:           2.0.1
  * Requires at least: 5.2
- * Requires PHP:      7.2
+ * Requires PHP:      5
  * Author:            Boncho Chavdarov
  * Author URI:         https://bchavdarov.github.io/bcdlab
  * License:           GPL-2.0-or-later
@@ -262,7 +262,7 @@ function bcdl_simple_gallery( $attr ) {
 				</a>
 				<p class='text-center'>$attachment->post_content</p>
 				</{$captiontag}>
-				<div class='modal fade' id='bcdlimg{$id}' tabindex='-1' role='dialog' aria-labelledby='BCDOL Modal Label' aria-hidden='true' style='max-width: fit-content !important; min-width: auto !important;'>
+				<div class='modal fade' id='bcdlimg{$id}' tabindex='-1' role='dialog' aria-labelledby='BCDOL Modal Label' aria-hidden='true'>
 					<div class='modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl h-100'>
 						<div class='modal-content bg-dark'>
 							<div class='modal-body'>
