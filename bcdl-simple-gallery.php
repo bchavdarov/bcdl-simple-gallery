@@ -247,7 +247,7 @@ function bcdl_simple_gallery( $attr ) {
 
 		$output .= "<{$itemtag} class='card bcdl-mask-contain shadow gallery-item mb-4'>";
 		$output .= "
-			<{$icontag} class='img-contain gallery-icon {$orientation}'>
+			<{$icontag} class='img-contain gallery-icon {$orientation}' style='position: relative;'>
 				$image_output
 				<div class='bcdl-mask rounded'></div>
 			</{$icontag}>";
