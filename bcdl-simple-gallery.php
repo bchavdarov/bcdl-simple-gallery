@@ -3,7 +3,7 @@
  * Plugin Name:       BCDLab Simple Gallery plugin
  * Plugin URI:        https://github.com/bchavdarov/bcdl-simple-gallery.git
  * Description:       BCDL gallery plugin written with ESNext standard and JSX support – build step required.
- * Version:           2.0.1
+ * Version:           2.0.2
  * Requires at least: 5.2
  * Requires PHP:      5
  * Author:            Boncho Chavdarov
