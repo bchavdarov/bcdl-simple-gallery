@@ -265,8 +265,8 @@ function bcdl_simple_gallery( $attr ) {
 				<div class='modal fade' id='bcdlimg{$id}' tabindex='-1' role='dialog' aria-labelledby='BCDOL Modal Label' aria-hidden='true'>
 					<div class='modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl h-100'>
 						<div class='modal-content bg-dark'>
-							<div class='modal-body'>
-								<img class='img-fluid' src='".wp_get_attachment_url( $attachment->ID )."' alt='". get_post_meta( $attachment->ID, '_wp_attachment_image_alt', true ) ."'/>
+							<div class='modal-body h-100'>
+								<img class='img-fluid w-100' src='".wp_get_attachment_url( $attachment->ID )."' alt='". get_post_meta( $attachment->ID, '_wp_attachment_image_alt', true ) ."'/>
 							</div>
 						</div>
 					</div>
